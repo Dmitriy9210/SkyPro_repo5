@@ -29,12 +29,14 @@ public class Main {
         System.out.println("Exersice3");
         short year = 2026;
         if (year >= 1584) {
-            if (year % 4 == 0 && year % 100 != 0 || year % 400 == 0)
+            if (year % 4 == 0 && year % 100 != 0 || year % 400 == 0) {
                 System.out.println(year + " год является високосным");
-            else
+            } else {
                 System.out.println(year + " год является не високосным");
-        } else
+            }
+        } else {
             System.out.println(year + " год до введения високосного года");
+        }
         System.out.println("_________________________");
 
         System.out.println("Exersice4");
@@ -48,8 +50,9 @@ public class Main {
         } else if (deliveryDistance >= 60 && deliveryDistance < 100) {
             days += 2;
             System.out.printf("Потребуется дней: %s дня доставки%n", days);
-        } else
+        } else {
             System.out.println("Доставка не производится");
+        }
         System.out.println("_________________________");
 
         System.out.println("Exersice5");
