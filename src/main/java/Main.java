@@ -23,19 +23,19 @@ public class Main {
             System.out.println("Установите облегченную версию приложения для Android по ссылке");
         } else if (clientOS == 0 && clientDeviceYear < 2015) {
             System.out.println("Установите облегченную версию приложения для iOS по ссылке");
+        } else {
+            System.out.println("Не правильно выбрана платформа или год выпуска телефона");
         }
         System.out.println("_________________________");
 
         System.out.println("Exersice3");
-        short year = 2026;
-        if (year >= 1584) {
-            if (year % 4 == 0 && year % 100 != 0 || year % 400 == 0) {
-                System.out.println(year + " год является високосным");
-            } else {
-                System.out.println(year + " год является не високосным");
-            }
-        } else {
+        short year = 1588;
+        if (year < 1584) {
             System.out.println(year + " год до введения високосного года");
+        } else if (year % 4 == 0 && year % 100 != 0 || year % 400 == 0) {
+            System.out.println(year + " год является високосным");
+        } else {
+            System.out.println(year + " год является не високосным");
         }
         System.out.println("_________________________");
 
